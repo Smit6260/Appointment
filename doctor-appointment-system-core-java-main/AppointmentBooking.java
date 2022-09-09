@@ -24,62 +24,7 @@ class AppointmentBooking
 
 	void dataAdd()		//method for creating Default docotr list present in the database.
 	{
-		doctorName.add("Nagarjun Raut");
-		doctorName.add("Ankush Nag");
-		doctorName.add("Prashant Jha");
-		doctorName.add("Ashish Gadpayle");
-		doctorName.add("Sandip Paul");
-		doctorName.add("Himanshu Pokhle");
-		doctorName.add("Amit Mule");
-
-		doctorQualification.add("MBBS");
-		doctorQualification.add("Er, MBBS");
-		doctorQualification.add("MBBS, MD");
-		doctorQualification.add("MBBS,MD");
-		doctorQualification.add("BAMS");
-		doctorQualification.add("MBBS, MD, Surgeon");
-		doctorQualification.add("BAMS");
-
-		doctorGender.add("M");
-		doctorGender.add("M");
-		doctorGender.add("M");
-		doctorGender.add("M");
-		doctorGender.add("M");
-		doctorGender.add("M");
-		doctorGender.add("M");
-
-		doctorPassword.add("Nagarjun123");
-		doctorPassword.add("Ankush123");
-		doctorPassword.add("Prashant123");
-		doctorPassword.add("Ashish123");
-		doctorPassword.add("Sandip123");
-		doctorPassword.add("Himanshu123");
-		doctorPassword.add("Amit123");
-
-		doctorAge.add(25);
-		doctorAge.add(24);
-		doctorAge.add(29);
-		doctorAge.add(29);
-		doctorAge.add(28);
-		doctorAge.add(23);
-		doctorAge.add(30);
-
-		doctorMobileNumber.add(9422887565l);
-		doctorMobileNumber.add(123l);
-		doctorMobileNumber.add(123l);
-		doctorMobileNumber.add(123l);
-		doctorMobileNumber.add(123l);
-		doctorMobileNumber.add(123l);
-		doctorMobileNumber.add(123l);
-
-		doctorCity.add("Gondiya");
-		doctorCity.add("Ranchi");
-		doctorCity.add("Nagpur");
-		doctorCity.add("Nagpur");
-		doctorCity.add("Mumbai");
-		doctorCity.add("Delhi");
-		doctorCity.add("Chennai");
-
+		
 	}
 
 	void admin() throws Exception
@@ -103,6 +48,8 @@ class AppointmentBooking
 				for(int i=0; i<=doctorName.size()-1; i++)
 				{
 					System.out.println("Name: \t "+doctorName.get(i));
+					/*System.out.println("Name: \t "+doctorAge.get(i));
+					System.out.println("Name: \t "+doctorMobileNumber.get(i));*/
 				
 				}
 				byte menuCHoice;
@@ -247,7 +194,7 @@ class AppointmentBooking
 			System.out.println(" ");
 			
 
-			System.out.println("1. Login \t 2.Registration");
+			System.out.println("1. Login \t 2.Registration \t 3.Back");
 			choice=sc.nextInt();
 
 			switch(choice)
@@ -272,6 +219,16 @@ class AppointmentBooking
 				doctorRegistration();
 				flag= false;
 				break;
+			case 3:
+			System.out.println("\t\t  _________________________");
+			System.out.println("\t\t |                         |");
+			System.out.println("\t\t | Welcome to Doctor Page! |");
+			System.out.println("\t\t |_________________________|");
+			System.out.println(" ");
+			
+
+			System.out.println("1. Login \t 2.Registration \t 3.Back");
+			choice=sc.nextInt();
 
 			default:
 				System.out.println("Entered Wrong choice..");
